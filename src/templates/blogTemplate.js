@@ -1,9 +1,7 @@
-
 import React from 'react';
+import { graphql } from 'gatsby'
 
-export default function Template({
-  data,
-}) {
+export default ({data}) => {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
   return (
